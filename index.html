@@ -50,23 +50,6 @@
 
   <main id="inicio">
     <section class="hero">
-      <div class="hero-bg-media" aria-hidden="true">
-        <video
-          class="hero-bg-video"
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="metadata"
-          poster="assets/photos/hero-printshop.png"
-        >
-          <source src="assets/video/industrial-printback-cinematic.mp4" type="video/mp4" />
-        </video>
-        <div class="hero-bg-fallback">
-          <img src="assets/photos/hero-printshop.png" alt="" />
-        </div>
-        <div class="hero-bg-overlay"></div>
-      </div>
       <div class="shell hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow"><span></span> Impresión industrial de alto desempeño</p>
@@ -97,17 +80,43 @@
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Muestras de impresión industrial">
-          <article class="hero-card hero-card-main">
-            <img src="assets/photos/hero-printshop.png" alt="Mesa de revisión con muestras impresas, etiquetas y catálogos en una imprenta industrial" />
-          </article>
-          <article class="hero-card hero-card-roll">
-            <img src="assets/photos/labels-service.png" alt="Rollos de etiquetas y muestras impresas para producción industrial" />
-          </article>
-          <article class="hero-card hero-card-editorial">
-            <img src="assets/photos/editorial-service.png" alt="Libros, catálogos y piezas corporativas impresas" />
-          </article>
-          <div class="hero-beam"></div>
+        <div class="hero-visual reveal">
+          <div class="hero-demo-shell">
+            <div class="hero-demo-header">
+              <span class="hero-demo-chip active">Producción industrial</span>
+              <span class="hero-demo-chip">Etiquetas y editorial</span>
+              <span class="hero-demo-chip">Control visual</span>
+            </div>
+
+            <div class="hero-demo-stage" aria-label="Video del proceso de impresión industrial">
+              <video
+                class="hero-bg-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="assets/photos/hero-printshop.png"
+              >
+                <source src="assets/video/industrial-printback-cinematic.mp4" type="video/mp4" />
+              </video>
+              <div class="hero-bg-fallback">
+                <img src="assets/photos/hero-printshop.png" alt="" />
+              </div>
+              <div class="hero-demo-overlay"></div>
+            </div>
+
+            <div class="hero-demo-footer">
+              <article>
+                <strong>Proceso continuo</strong>
+                <span>Movimiento, revisión y salida de producción en una sola superficie visual.</span>
+              </article>
+              <article>
+                <strong>Presentación más premium</strong>
+                <span>El video se comporta como una demo central, no como un fondo genérico.</span>
+              </article>
+            </div>
+          </div>
         </div>
 
         <div class="metrics-panel reveal">
