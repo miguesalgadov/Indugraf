@@ -1,6 +1,8 @@
 const header = document.querySelector(".site-header");
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".main-nav");
+const heroVideo = document.querySelector(".hero-bg-video");
+const heroFallback = document.querySelector(".hero-bg-fallback");
 
 if (toggle && nav) {
   toggle.addEventListener("click", () => {
@@ -16,6 +18,20 @@ if (toggle && nav) {
       toggle.setAttribute("aria-expanded", "false");
     });
   });
+}
+
+if (heroVideo && heroFallback) {
+  const showHeroFallback = () => {
+    heroFallback.classList.add("is-visible");
+    heroVideo.classList.add("is-hidden");
+  };
+
+  heroVideo.addEventListener("error", showHeroFallback);
+
+  const playAttempt = heroVideo.play();
+  if (playAttempt && typeof playAttempt.catch === "function") {
+    playAttempt.catch(showHeroFallback);
+  }
 }
 
 const links = [...document.querySelectorAll(".main-nav a")];
