@@ -267,7 +267,7 @@ section {
   padding-top: 26px;
   position: relative;
   z-index: 2;
-  max-width: 780px;
+  max-width: 1080px;
 }
 
 .eyebrow {
@@ -292,10 +292,10 @@ section {
 
 h1 {
   margin: 0;
-  font-size: clamp(3rem, 5vw, 5.15rem);
+  font-size: clamp(2.85rem, 5.2vw, 5.1rem);
   line-height: 0.93;
   letter-spacing: -0.07em;
-  max-width: 10ch;
+  max-width: 13.2ch;
   text-wrap: balance;
 }
 
@@ -312,7 +312,7 @@ h1 {
 }
 
 .hero-lead {
-  max-width: 58ch;
+  max-width: 64ch;
   margin: 20px 0 0;
   font-size: 1rem;
 }
@@ -321,7 +321,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin: 28px 0 18px;
+  margin: 26px 0 10px;
 }
 
 .trust-item,
@@ -354,7 +354,7 @@ h1 {
 
 .hero-media-block {
   position: relative;
-  margin-top: 34px;
+  margin-top: 22px;
 }
 
 .hero-demo-stage {
