@@ -261,13 +261,13 @@ section {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(520px, 1.08fr);
-  gap: 34px;
-  align-items: center;
+  grid-template-columns: minmax(0, 0.88fr) minmax(500px, 1.12fr);
+  gap: 42px;
+  align-items: start;
 }
 
 .hero-copy {
-  padding-top: 30px;
+  padding-top: 26px;
   position: relative;
   z-index: 2;
 }
@@ -294,10 +294,10 @@ section {
 
 h1 {
   margin: 0;
-  font-size: clamp(3rem, 5.2vw, 5.25rem);
-  line-height: 0.95;
+  font-size: clamp(2.85rem, 4.8vw, 4.85rem);
+  line-height: 0.93;
   letter-spacing: -0.07em;
-  max-width: 11ch;
+  max-width: 8.7ch;
   text-wrap: balance;
 }
 
@@ -314,21 +314,35 @@ h1 {
 }
 
 .hero-lead {
-  max-width: 58ch;
-  margin: 22px 0 0;
-  font-size: 1.03rem;
+  max-width: 48ch;
+  margin: 20px 0 0;
+  font-size: 1rem;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin: 30px 0 28px;
+  margin: 28px 0 18px;
 }
 
-.trust-row {
-  display: grid;
-  gap: 12px;
+.hero-inline-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-inline-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(149, 196, 255, 0.18);
+  background: rgba(255, 255, 255, 0.03);
+  color: #d8e5f6;
+  font-size: 0.84rem;
+  white-space: nowrap;
 }
 
 .trust-item,
@@ -492,7 +506,7 @@ h1 {
 
 .metrics-panel {
   grid-column: 2;
-  margin-top: -72px;
+  margin-top: -54px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 18px 16px;
@@ -520,6 +534,31 @@ h1 {
   color: #c2d5ef;
   font-size: 0.77rem;
   line-height: 1.35;
+}
+
+.trust-row {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.trust-item {
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.trust-item strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.trust-item span {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .solutions,
@@ -883,6 +922,10 @@ h2 {
     margin-top: 0;
   }
 
+  .trust-row {
+    grid-template-columns: 1fr;
+  }
+
   .timeline {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -979,7 +1022,7 @@ h2 {
 
   h1 {
     max-width: none;
-    font-size: clamp(2.45rem, 11vw, 3.75rem);
+    font-size: clamp(2.45rem, 10vw, 3.55rem);
   }
 
   h2 {
@@ -1007,6 +1050,10 @@ h2 {
   .btn,
   .cta-actions {
     width: 100%;
+  }
+
+  .hero-inline-points {
+    gap: 8px;
   }
 
   .cta-actions {
